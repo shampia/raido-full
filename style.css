@@ -1,0 +1,370 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color: white;
+}
+
+button {
+    background-color: transparent;
+    border: unset;
+    outline: none;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #0A0D13;
+}
+
+.container {
+    margin: auto;
+    max-width: 1160px;
+    height: 100%;
+}
+
+header {
+    width: 100%;
+    padding: 28px 0px;
+    position: absolute;
+    border-bottom: 1px solid #707070;
+    z-index: 99;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 47px;
+}
+
+header nav ul li {
+    padding: 0px 15px;
+}
+
+header nav ul li a {
+    font-size: 16px;
+}
+
+header nav ul li.active a {
+    color: #F49F0A;
+}
+
+header nav {
+    position: relative;
+}
+
+header nav #indicator {
+    display: block;
+    height: 2px;
+    background: #F49F0A;
+    position: absolute;
+    bottom: -35px;
+    transition: left 0.5s ease;
+}
+
+section.explore {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+section.explore .explore-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+}
+
+section.explore .container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+section.explore h2 {
+    font-size: 64px;
+    max-width: 645px;
+}
+
+section.explore p {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+section.explore p::before {
+    content: '';
+    display: inline-block;
+    width: 40px;
+    height: 1.5px;
+    background-color: white;
+}
+
+section.explore a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 23px;
+    background-color: #F49F0A;
+    margin-top: 60px;
+}
+
+section.explore a span.text {
+    padding: 16px 0px 14px 20px;
+}
+
+section.explore a span.icon {
+    padding: 13px;
+    background-color: #E89400;
+}
+
+/* About-As */
+
+.left-container {
+    padding-left: calc((100vw - 1160px) / 2);
+}
+
+.information {
+    width: 50%;
+    height: 100%;
+    padding: 122px 0px 120px 0px;
+}
+
+.information .left-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.information h2 {
+    font-size: 46px;
+    margin-bottom: 30px;
+}
+
+.information p{
+    font-size: 16px;
+    margin-bottom: 60px;
+}
+
+section.aboutas {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+section.aboutas a span.text {
+    padding: 13px 0px 13px 20px;
+    background-color: #F49F0A;
+    color: black;
+}
+
+section.aboutas a span.icon {
+    padding: 13px;
+    background-color: #E89400;
+}
+
+.maintable{
+    height: 145px;
+    margin-bottom: 55px;
+    position: relative;
+}
+
+.maintable .table {
+    position: absolute;
+    background-color: #1F242E;
+}
+
+.table ul {
+    width: 830px;
+    list-style: none;
+    display: flex;
+    padding: 25px 0px 31px 0px;
+}
+
+.table ul li {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    align-items: center;
+    flex-grow: 1;
+    position: relative;
+}
+
+.table ul li b {
+    font-size: 42px;
+}
+
+.table ul li:not(:last-child)::after {
+    content: '';
+    display: inline-block;
+    height: 35px;
+    width: 1.5px;
+    background-color: #2B313C;
+    position: absolute;
+    right: 0px;
+    transform: translateY(-50%);
+    top: 50%;
+}
+
+.image {
+    width: 50%;
+    height: 100%;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* Discover */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+}
+
+
+body{
+    background-color: #0A0D13;
+}
+
+.container-discover {
+    margin: auto;
+    max-width: 1160px;
+    height: 100%;
+}
+
+section.discover {
+    width: 100%;
+    padding: 120px 0px;
+}
+
+section.discover .container-discover {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.discover-title h2 {
+    font-size: 42px;
+    color: white;
+    text-align: center;
+}
+
+.discover-title p {
+    font-size: 16px;
+    color: white;
+    text-align: center;
+}
+
+.discoveries {
+    width: 100%;
+    display: flex;
+    gap: 70px; 
+}
+
+.discoveries .discovery-country {
+    flex-grow: 1;
+    display: flex;
+    gap: 35px;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.discoveries .discovery-country .country-info {
+    position: relative;
+    width: 100%;
+}
+
+.discoveries .discovery-country .country-info .country-img {
+    width: 100%;
+}
+
+.discoveries .discovery-country .country-info .country-img::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: linear-gradient(180deg, rgba(0,0,0,0.5) 70%, rgba(10,13,19,1) 98%);
+}
+
+.discoveries .discovery-country .country-info .country-text {
+    position: absolute;
+    bottom: 0px;
+    padding-left: 30px;
+}
+
+.discoveries .discovery-country .country-info .country-text h2 {
+    font-size: 34px;
+    color: #F49F0A
+}
+
+.discoveries .discovery-country a {
+    padding: 15px 20px;
+    border: 1px solid #FFFFFF;
+    display: flex;
+    align-items: center;
+    gap: 27px;
+    margin-left: 30px;
+}
+
+.discoveries .discovery-country:nth-child(2) {
+    transform: translateY(60px);
+}
+
+/* Blog */
+  
+.Blog-title{
+    text-align: center;
+    color: white;
+
+}
+
+.Blog-title h2{
+    font-size: 42px;
+}
+
+.Blog-title p{
+    font-size: 16px;
+}
+
+.bloges{
+    display: flex;
+    flex-direction: row;
+    padding: 150px 0px;
+    align-items: flex-end;
+}
+
+.bloges h2{
+    position: absolute;    
+    margin: -115px 0px;
+    width: 25%;
+ }
+ 
+ .bloges img{
+     opacity: 0.7;
+ }
+
