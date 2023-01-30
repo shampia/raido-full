@@ -537,3 +537,179 @@ section.journal a span.journal-button-icon{
 .photo-4{
   padding: 0px 0px 0px 310px;
 }
+
+.galeri-text{
+    position: relative;
+    text-align: center;
+    margin: -45px 0px 0px 0px ;
+}
+
+.galeri-text h2{
+    font-size: 34px;
+}
+
+.galeri-text p{
+    font-size: 16px;
+}
+
+/*contact*/
+
+section.contact{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+.contact-text-conteiner{
+    width: 50%;
+    height: 100%;
+    padding: 258px 218px 308px 140px;
+}
+
+.contact-text-conteiner h2{
+    width: 75%;
+    font-size: 34px;
+}
+
+.contact-text-conteiner p{  
+    padding: 32px 175px 300px 0px;
+    font-size: 14px;
+    width: 120%;
+}
+
+.contact-adres-conteiner{
+    width: 50%;
+    height: 100%;   
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 114px;
+}
+
+.phone{
+    margin-top: 187px;
+    border-radius: 50%;
+    border: 1px solid white;
+    align-items: center;
+    background-color: #12151B;
+}
+
+.phone img{
+    padding: 20px 110px;
+}
+
+.phone h2{
+    padding: 0px 76px;
+    margin: -5px 0px;
+    font-size: 34px;
+}
+
+.phone h3{
+    padding: 11px 60px;
+}
+ 
+.phone p{
+    padding: 7px 3px 39px 1px;
+    margin: -4px 61px;
+    font-size: 16px;
+}
+
+.mail{
+    margin-top: 187px;
+    border-radius: 50%;
+    border: 1px solid white;
+    background-color: #12151B;
+}
+
+.mail img{
+    margin: 70px 90px   ;
+}
+
+.mail h2{
+    width: 60%;
+    margin: -52px -45px 39px 57px;
+}
+
+/* last-page */
+
+.last-title{
+    text-align: center;
+}
+
+.last-title h2{
+    font-size: 22px;
+}
+
+.last-icone{
+    display: flex;
+    flex-direction: row;
+    padding: 32px 638px 40px 637px;
+    gap: 30px;
+}
+
+.last-information{
+    padding: 40px 452px 44px 452px;
+}
+
+.last-information h2{
+    font-size: 14px;
+    text-align: center;
+}
+
+.footer-container{
+    margin: auto;
+    max-width: 1160px;
+    height: 100%;
+}
+
+.footer-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer {
+    width: 100%;
+    padding: 28px 0px;
+    position: absolute;
+    border-bottom: 1px solid #707070;
+    z-index: 99;
+}
+
+footer nav ul {
+    list-style: none;
+    display: flex;
+    gap: 47px;
+}
+
+footer nav ul li {
+    padding: 0px 15px;
+}
+
+footer nav ul li a {
+    font-size: 16px;
+}
+
+.last-menu{
+    display: flex;
+    flex-direction: row;
+    gap: 65px;
+    padding: 44px 315px 120px 307px;
+}
+
+.page-bottom h2{
+    font-size: 14px;
+    text-align: center;
+}
+
+.page-bottom h2::after {
+    content: '';
+    display: inline-block;
+    height: 1111px;
+    width: 0.38px;
+    background-color: #2B313C;
+    position: absolute;
+    transform: rotate(90deg);   
+    margin: -565px -30px;
+}
