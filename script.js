@@ -31,3 +31,39 @@ for(let i = 0; i < menu.length; i++) {
         setIndicator(element)
     })
 }
+
+document.getElementById('header-menu').addEventListener('click',function()
+{
+    document.getElementById('header').classList.toggle('dropped');
+})
+
+
+document.getElementById('about-as-btn').addEventListener('click',function()
+{
+    document.getElementById('about-as-page').scrollIntoView({behavior:'smooth'});
+})
+
+document.getElementById('discover-btn').addEventListener('click',function()
+{
+    document.getElementById('discover-page').scrollIntoView({behavior:'smooth'});
+})
+
+document.getElementById('blog-btn').addEventListener('click',function()
+{
+    document.getElementById('blo-page').scrollIntoView({behavior:'smooth'});
+})
+
+document.getElementById('journal-btn').addEventListener('click',function()
+{
+    document.getElementById('journal-page').scrollIntoView({behavior:'smooth'});
+})
+
+document.getElementById('galery-btn').addEventListener('click',function()
+{
+    document.getElementById('galeri-page').scrollIntoView({behavior:'smooth'});
+})
+
+document.getElementById('contact-btn').addEventListener('click',function()
+{
+    document.getElementById('contact-page').scrollIntoView({behavior:'smooth'});
+})
