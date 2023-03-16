@@ -501,7 +501,6 @@ section.journal a span.icon {
     position: relative;
     overflow: hidden;
     transition: transform 0.3s ease-in-out;
-
 }
 
 .photo img {
@@ -533,7 +532,7 @@ section.journal a span.icon {
 }
 
 .photo:hover .galeri-text {
-    bottom: 45px;
+    margin-bottom: 245px;
 }
 
 /*contact*/
