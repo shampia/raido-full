@@ -32,48 +32,17 @@ for(let i = 0; i < menu.length; i++) {
     })
 }
 
-document.getElementById('header-menu').addEventListener('click',function()
-{
-    document.getElementById('header').classList.toggle('dropped');
+const menuList = document.querySelectorAll("#header-menu li")
+
+for (let i = 0; i < menuList.length; i++){
+    const li = menuList[i]
+    const target = li.getAttribute('target')
+    li.addEventListener('click',function(e){
+        document.getElementById(target).scrollIntoView({behavior:'smooth'})
+    })
+}
+
+window.addEventListener("scroll", function(){
+    var header = document.querySelector("header");
+    header.classList.toggle("sticky", window.scrollY > 0);
 })
-
-
-document.getElementById('about-as-btn').addEventListener('click',function()
-{
-    document.getElementById('about-as-page').scrollIntoView({behavior:'smooth'});
-})
-
-document.getElementById('discover-btn').addEventListener('click',function()
-{
-    document.getElementById('discover-page').scrollIntoView({behavior:'smooth'});
-})
-
-document.getElementById('blog-btn').addEventListener('click',function()
-{
-    document.getElementById('blo-page').scrollIntoView({behavior:'smooth'});
-})
-
-document.getElementById('journal-btn').addEventListener('click',function()
-{
-    document.getElementById('journal-page').scrollIntoView({behavior:'smooth'});
-})
-
-document.getElementById('galery-btn').addEventListener('click',function()
-{
-    document.getElementById('galeri-page').scrollIntoView({behavior:'smooth'});
-})
-
-document.getElementById('contact-btn').addEventListener('click',function()
-{
-    document.getElementById('contact-page').scrollIntoView({behavior:'smooth'});
-})
-
-// const menuList = document.querySelectorAll('#header-menu li')
-
-// for (let i = 0; i < menuList.length; i++) {
-//     const li = menuList[i]
-//     const target = li.getAttribute('target')
-//     li.addEventListener('click',function() {
-//         document.getElementById(target).scrollIntoView({behavior:'smooth'});
-//     })
-// }
